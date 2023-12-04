@@ -7,6 +7,12 @@ Initialization of the client when the create function is called, and not at the 
 
 More about SoapClient here: https://www.php.net/manual/en/class.soapclient.php.
 
+## Installation.
+
+```shell
+composer require rocketfellows/soap-client-factory
+```
+
 ## Contributing.
 
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
