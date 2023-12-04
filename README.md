@@ -24,6 +24,14 @@ SoapClientFactory functions:
 Throwable exceptions:
 - `SoapFault` - https://www.php.net/manual/ru/class.soapfault.php.
 
+## Usage example.
+
+Create instance of SoapClientFactory and call `create` function with arguments for SoapClient:
+
+```php
+$client = (new SoapClientFactory())->create('test.wsdl');
+```
+
 ## Contributing.
 
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
