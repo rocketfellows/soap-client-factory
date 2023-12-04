@@ -1,3 +1,3 @@
-# Simple component template
+# SoapClient factory
 
 ![Code Coverage Badge](./badge.svg)
