@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1701688519">
-  <project timestamp="1701688519">
+<coverage generated="1702053313">
+  <project timestamp="1702053313">
     <file name="/app/src/SoapClientFactory.php">
       <class name="rocketfellows\SoapClientFactory\SoapClientFactory" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
