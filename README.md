@@ -18,7 +18,7 @@ composer require rocketfellows/soap-client-factory
 Component composition:
 - `SoapClientFactory` - factory for creating PHP `SoapClient` with given parameters.
 
-SoapClientFactory functions:
+`SoapClientFactory` functions:
 - `public function create(string $wsdl, ?array $options = []): SoapClient` - factory-function takes as parameters the string $wsdl (URI of the WSDL file or NULL if working in non-WSDL mode.) and an optional array of parameters $options. More details about the parameters at https://www.php.net/manual/en/class.soapclient.php.
 
 Throwable exceptions:
