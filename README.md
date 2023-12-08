@@ -1,7 +1,5 @@
 # PHP SoapClient factory.
 
-![Code Coverage Badge](./badge.svg)
-
 PHP SOAP client factory - is a wrapper around PHP `SoapClient` initialization.
 Initialization of the client when the create function is called, and not at the time of instantiation of the dependency.
 
