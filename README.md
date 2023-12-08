@@ -26,7 +26,7 @@ Throwable exceptions:
 
 ## Usage example.
 
-Create instance of SoapClientFactory and call `create` function with arguments for SoapClient:
+Create instance of `SoapClientFactory` and call `create` function with arguments for PHP `SoapClient`:
 
 ```php
 $client = (new SoapClientFactory())->create('test.wsdl');
