@@ -1,5 +1,6 @@
 # PHP SoapClient factory.
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 ![PHPStan Badge](https://img.shields.io/badge/PHPStan-level%205-brightgreen.svg?style=flat)
 
 PHP SOAP client factory - is a wrapper around PHP `SoapClient` initialization.
