@@ -39,15 +39,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: php-actions/composer@v6
-      - name: Run PHPUnit Tests
-        uses: php-actions/phpunit@v3
+      - name: Install PHP
+        uses: shivammathur/setup-php@master
         with:
-          version: 9.5.28
-          php_extensions: xdebug
-          bootstrap: vendor/autoload.php
-          configuration: phpunit.xml
-          args: --coverage-text
+          php-version: 7.4
+          tools: 'composer:v2'
+          extensions: pcov, mbstring, posix, dom, soap, xdebug
+      - uses: php-actions/composer@v6
+      - name: Run the tests
+        run: ./vendor/bin/phpunit --coverage-text
         env:
           XDEBUG_MODE: coverage
       - name: Generate test coverage badge
