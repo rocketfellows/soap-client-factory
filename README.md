@@ -2,6 +2,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 ![PHPStan Badge](https://img.shields.io/badge/PHPStan-level%205-brightgreen.svg?style=flat)
+![Code Coverage Badge](./badge.svg)
 
 PHP SOAP client factory - is a wrapper around PHP `SoapClient` initialization.
 Initialization of the client when the create function is called, and not at the time of instantiation of the dependency.
