@@ -26,11 +26,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install PHP
-          uses: shivammathur/setup-php@master
-          with:
-            php-version: 7.4
-            tools: 'composer:v2'
-            extensions: pcov, mbstring, posix, dom, soap
+        uses: shivammathur/setup-php@master
+        with:
+          php-version: 7.4
+          tools: 'composer:v2'
+          extensions: pcov, mbstring, posix, dom, soap
       - uses: php-actions/composer@v6
       - uses: php-actions/phpunit@v3
         with:
