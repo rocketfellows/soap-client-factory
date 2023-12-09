@@ -4,6 +4,7 @@ namespace rocketfellows\SoapClientFactory\tests\unit;
 
 use PHPUnit\Framework\TestCase;
 use rocketfellows\SoapClientFactory\SoapClientFactory;
+use SoapClient;
 use SoapFault;
 
 /**
@@ -27,7 +28,21 @@ class SoapClientFactoryTest extends TestCase
         $this->soapClientFactory->create('foo');
     }
 
-    public function testSuccessCreateSoapClient(): void
+    /**
+     * @dataProvider getSoapClientProvidedData
+     */
+    public function testSuccessCreateSoapClient(string $wsdl, array $options): void
     {
+        $this->assertInstanceOf(SoapClient::class, $this->soapClientFactory->create($wsdl, $options));
+    }
+
+    public function getSoapClientProvidedData(): array
+    {
+        return [
+            'vies check vat test service connection data' => [
+                'wsdl' => 'https://ec.europa.eu/taxation_customs/vies/checkVatTestService.wsdl',
+                'options' => [],
+            ],
+        ];
     }
 }
