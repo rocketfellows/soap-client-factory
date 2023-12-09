@@ -20,10 +20,14 @@ class SoapClientFactoryTest extends TestCase
         $this->soapClientFactory = new SoapClientFactory();
     }
 
-    public function testCreateThrowsSoapFaultError(): void
+    public function testCreateSoapClientThrowsSoapFaultError(): void
     {
         $this->expectException(SoapFault::class);
 
         $this->soapClientFactory->create('foo');
+    }
+
+    public function testSuccessCreateSoapClient(): void
+    {
     }
 }
